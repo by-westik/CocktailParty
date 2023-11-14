@@ -5,4 +5,8 @@
     <string name="login_hint">Логин</string>
     <string name="login_button_text">Войти</string>
     <string name="want_signup">Нет аккаунта? Зарегистрироваться</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="switch_to_auth">Уже есть аккаунт? Авторизоваться</string>
 </resources>
