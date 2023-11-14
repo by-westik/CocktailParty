@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CocktailParty</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_hint">Логин</string>
+    <string name="login_button_text">Войти</string>
+    <string name="want_signup">Нет аккаунта? Зарегистрироваться</string>
 </resources>
