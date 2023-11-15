@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/authFragment"
+    android:id="@+id/nav">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.cocktail.party.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth">
+
+        <action
+            android:id="@+id/action_authFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_authFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.cocktail.party.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_signUpFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:label="fragment_home"
+        android:name="com.cocktail.party.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+</navigation>
