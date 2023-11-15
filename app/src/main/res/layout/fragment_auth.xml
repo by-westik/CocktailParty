@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".AuthFragment">
+    tools:context=".auth.AuthFragment">
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_text_field"
         android:layout_width="match_parent"

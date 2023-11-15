@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".SignUpFragment">
+    tools:context=".auth.SignUpFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_text_field"
