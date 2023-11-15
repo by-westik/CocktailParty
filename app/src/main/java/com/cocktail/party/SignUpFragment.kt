@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.cocktail.party.databinding.FragmentSignUpBinding
 import com.google.android.material.button.MaterialButton
 
@@ -35,12 +36,11 @@ class SignUpFragment : Fragment() {
             /*
             TODO добавить логику регистрации
              */
+            findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
         }
 
         tvAuth.setOnClickListener {
-            /*
-            TODO добавить навигацию на фрагмент авторизации
-             */
+            findNavController().navigate(R.id.action_signUpFragment_to_authFragment)
         }
 
         return binding.root
