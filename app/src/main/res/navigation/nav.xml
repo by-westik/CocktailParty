@@ -13,9 +13,7 @@
 
         <action
             android:id="@+id/action_authFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment"
-            app:popUpTo="@id/authFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/signUpFragment"/>
 
         <action
             android:id="@+id/action_authFragment_to_homeFragment"
@@ -31,9 +29,7 @@
 
         <action
             android:id="@+id/action_signUpFragment_to_authFragment"
-            app:destination="@id/authFragment"
-            app:popUpTo="@id/signUpFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/authFragment"/>
 
         <action
             android:id="@+id/action_signUpFragment_to_homeFragment"
@@ -44,7 +40,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:label="fragment_home"
-        android:name="com.cocktail.party.HomeFragment"
+        android:name="com.cocktail.party.chat.HomeFragment"
         tools:layout="@layout/fragment_home">
 
     </fragment>
