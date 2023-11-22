@@ -8,4 +8,8 @@ object Constants {
 
     const val LOGIN_END_POINT = "login"
     const val REGISTER_END_POINT = "create_user"
+
+    const val WEBSOCKET_URL = "ws://192.168.0.106:8080/chat"
+
+    const val CHAT_URL = "chat"
 }

@@ -42,6 +42,7 @@ class AuthFragment : Fragment() {
             when (it) {
                 is Resource.Success -> {
                     findNavController().navigate(R.id.action_authFragment_to_homeFragment)
+                    authViewModel.saveUserAuthToken(it.value.token)
                 }
                 else -> {
                     Toast.makeText(requireContext(), "Ошибка авторизации", Toast.LENGTH_SHORT).show()
