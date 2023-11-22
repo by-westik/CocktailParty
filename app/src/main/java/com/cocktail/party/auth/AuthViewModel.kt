@@ -30,4 +30,8 @@ class AuthViewModel @Inject constructor(
         _loginResponse.value = repository.registerUser(signUpRequest)
     }
 
+    fun saveUserAuthToken(token: String) = viewModelScope.launch {
+        repository.saveUserAuthToken(token)
+    }
+
 }
